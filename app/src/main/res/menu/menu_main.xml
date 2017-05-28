@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".activities.MainActivity">
+
+
+    <item android:id="@+id/Home"
+
+          android:title="Home"
+          android:orderInCategory="100"
+           />
+
+    <item android:id="@+id/rightList"
+
+        android:title="Manual"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+
+
+</menu>

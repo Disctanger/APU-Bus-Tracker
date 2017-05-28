@@ -1,0 +1,590 @@
+<resources>
+    <string name="app_name">RTracker</string>
+    <string name="txt">Bus stops</string>
+
+    <string name="gps_enabled">GPS Enabled</string>
+    <string name="gps_disabled">GPS Disabled</string>
+    <string name="add">Add</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="DrawerState">DrawerState</string>
+    <string name="DrawerIsOpen">DrawerIsOpen</string>
+    <string name="DrawerIsClosed">DrawerIsClosed</string>
+
+    <string-array name="planets_array">
+        <item>Home</item>
+        <item>Bus Tracker</item>
+        <item>Baito Calculator</item>
+        <item>About us</item>
+    </string-array>
+
+    <string name="action_hide">Hide Panel</string>
+    <string name="action_show">Show Panel</string>
+    <string name="action_anchor_enable">Enable Anchor Point</string>
+    <string name="action_anchor_disable">Disable Anchor Point</string>
+    <string name="hello"><![CDATA[<b>The Awesome Sliding Up Panel</b><br/> Brought to you by<br/><a href="http://umanoapp.com">http://umanoapp.com</a>]]></string>
+    <string name="follow"><![CDATA[Follow us<br/>on <a href="http://twitter.com/umanoapp">Twitter</a>]]></string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string-array name="bus_stops_full">
+        <item>Beppu Station</item>
+        <item>Ekimae Honmachi</item>
+        <item>Beppu Kitahama</item>
+        <item>Beppu Tower Mae</item>
+        <item>Matogahama Koen Mae</item>
+        <item>Kyomachi</item>
+        <item>Mochigahama</item>
+        <item>Yubinkyoku Mae</item>
+        <item>Beppu Kotsu Center</item>
+        <item>Dai San Futo Iriguchi</item>
+        <item>Minamisuga Iriguchi</item>
+        <item>Fujimi San Chome</item>
+        <item>Fujimi Yon Chome</item>
+        <item>Fujimi Roku Chome</item>
+        <item>Shiawasedori</item>
+        <item>Minami Ishigaki</item>
+        <item>Hosenji</item>
+        <item>Yoshihiro Onsen Mae</item>
+        <item>Yoshihiro Jija Mae</item>
+        <item>Ishigaki Hatchyome</item>
+        <item>Ishigaki Kyuchome</item>
+        <item>Oyabu</item>
+        <item>Musumeda</item>
+        <item>Shiomicho</item>
+        <item>Harukigawa</item>
+        <item>Fukamachi</item>
+        <item>Rokushyoyen</item>
+        <item>Shoningahama Koen Mae</item>
+        <item>Kamegawa Baibasu Iriguchi</item>
+        <item>Shohaen</item>
+        <item>Benten Mae</item>
+        <item>Kamegawa Kiyosen Mae</item>
+        <item>Kamegawa Shinkawa</item>
+        <item>Kamegawa Station</item>
+        <item>Furuichi Iriebashi</item>
+        <item>Furuichi</item>
+        <item>Sekinoe Kaisuiyokujo Mae</item>
+        <item>Kitashinden</item>
+        <item>Osaka Iriguchi</item>
+        <item>Mori Iriguchi</item>
+        <item>Mori Kosaten</item>
+        <item>"APHouse"</item>
+        <item>Ritsumeikan Asia Pacific University</item>
+    </string-array>
+
+    <string-array name="bus_numbers">
+        <item>All</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+    </string-array>
+    <string-array name="bus_direction">
+        <item>APU</item>
+        <item>EKI</item>
+    </string-array>
+    <string-array name="bus_types">
+        <item>All</item>
+        <item>Luxe</item>
+        <item>MD</item>
+        <item>Express</item>
+    </string-array>
+    <string-array name="bus_stops_f">
+        <item>Beppu Station</item>
+        <item>Ekimae Honmachi</item>
+        <item>Beppu Kitahama</item>
+        <item>Beppu Tower Mae</item>
+        <item>Matogahama Koen Mae</item>
+        <item>Fujimi San Chome</item>
+        <item>Fujimi Yon Chome</item>
+        <item>Fujimi Roku Chome</item>
+        <item>Shiawasedori</item>
+        <item>Minami Ishigaki</item>
+        <item>Hosenji</item>
+        <item>Yoshihiro Onsen Mae</item>
+        <item>"Yoshihiro Jinja Mae"</item>
+        <item>Ishigaki Hatchyome</item>
+        <item>Ishigaki Kyuchome</item>
+        <item>Oyabu</item>
+        <item>Musumeda</item>
+        <item>Shiomicho</item>
+        <item>Harukigawa</item>
+        <item>Fukamachi</item>
+        <item>Rokushyoyen</item>
+        <item>Shoningahama Koen Mae</item>
+        <item>Kamegawa Baibasu Iriguchi</item>
+        <item>Shohaen</item>
+        <item>Benten Mae</item>
+        <item>Kamegawa Kiyosen Mae</item>
+        <item>Kamegawa Shinkawa</item>
+        <item>Kamegawa Station</item>
+        <item>Furuichi Iriebashi</item>
+        <item>Furuichi</item>
+        <item>Sekinoe Kaisuiyokujo Mae</item>
+        <item>Kitashinden</item>
+        <item>Osaka Iriguchi</item>
+        <item>Mori Iriguchi</item>
+        <item>Mori Kosaten</item>
+        <item>"APHouse"</item>
+        <item>Ritsumeikan Asia Pacific University</item>
+    </string-array>
+    <string-array name="bus_stops">
+        <item>Beppu Station</item>
+        <item>Ekimae Honmachi</item>
+        <item>Beppu Kitahama</item>
+        <item>Beppu Tower Mae</item>
+        <item>Matogahama Koen Mae</item>
+        <item>Kyomachi</item>
+        <item>Mochigahama</item>
+        <item>Yubinkyoku Mae</item>
+        <item>Beppu Kotsu Center</item>
+        <item>Dai San Futo Iriguchi</item>
+        <item>Minamisuga Iriguchi</item>
+        <item>Harukigawa</item>
+        <item>Fukamachi</item>
+        <item>Rokushyoyen</item>
+        <item>Shoningahama Koen Mae</item>
+        <item>Kamegawa Baibasu Iriguchi</item>
+        <item>Shohaen</item>
+        <item>Benten Mae</item>
+        <item>Kamegawa Kiyosen Mae</item>
+        <item>Kamegawa Shinkawa</item>
+        <item>Kamegawa Station</item>
+        <item>Furuichi Iriebashi</item>
+        <item>Furuichi</item>
+        <item>Sekinoe Kaisuiyokujo Mae</item>
+        <item>Kitashinden</item>
+        <item>Osaka Iriguchi</item>
+        <item>Mori Iriguchi</item>
+        <item>Mori Kosaten</item>
+        <item>"APHouse"</item>
+        <item>Ritsumeikan Asia Pacific University</item>
+    </string-array>
+    <string-array name="bus_stop_tables_full">
+        <item>station</item>
+        <item>honmachi</item>
+        <item>kitahama</item>
+        <item>towermae</item>
+        <item>matogahama</item>
+        <item>kyomachi</item>
+        <item>mochigahama</item>
+        <item>yubinkyoku</item>
+        <item>kotsucenter</item>
+        <item>daisanfuto</item>
+        <item>minamisuga</item>
+        <item>san</item>
+        <item>yon</item>
+        <item>roku</item>
+        <item>shiawasedori</item>
+        <item>minamiishigaki</item>
+        <item>hosenji</item>
+        <item>onsenmae</item>
+        <item>jinja</item>
+        <item>hatchyome</item>
+        <item>kyuchome</item>
+        <item>oyabu</item>
+        <item>musumeda</item>
+        <item>shiomicho</item>
+        <item>harukigawa</item>
+        <item>fukamachi</item>
+        <item>rokushyoyen</item>
+        <item>shoningahama</item>
+        <item>baibasu</item>
+        <item>shohaen</item>
+        <item>benten</item>
+        <item>kiyosen</item>
+        <item>shinkawa</item>
+        <item>kamegawa</item>
+        <item>iriebashi</item>
+        <item>furuichi</item>
+        <item>sekinoe</item>
+        <item>kitashinden</item>
+        <item>osaka</item>
+        <item>mori</item>
+        <item>kosaten</item>
+        <item>house</item>
+        <item>apu</item>
+    </string-array>
+    <string-array name="bus_stop_tables">
+        <item>station</item>
+        <item>honmachi</item>
+        <item>kitahama</item>
+        <item>towermae</item>
+        <item>matogahama</item>
+        <item>kyomachi</item>
+        <item>mochigahama</item>
+        <item>yubinkyoku</item>
+        <item>kotsucenter</item>
+        <item>daisanfuto</item>
+        <item>minamisuga</item>
+        <item>harukigawa</item>
+        <item>fukamachi</item>
+        <item>rokushyoyen</item>
+        <item>shoningahama</item>
+        <item>baibasu</item>
+        <item>shohaen</item>
+        <item>benten</item>
+        <item>kiyosen</item>
+        <item>shinkawa</item>
+        <item>kamegawa</item>
+        <item>iriebashi</item>
+        <item>furuichi</item>
+        <item>sekinoe</item>
+        <item>kitashinden</item>
+        <item>osaka</item>
+        <item>mori</item>
+        <item>kosaten</item>
+        <item>house</item>
+        <item>apu</item>
+    </string-array>
+    <string-array name="bus_stop_tables_f">
+        <item>station</item>
+        <item>honmachi</item>
+        <item>kitahama</item>
+        <item>towermae</item>
+        <item>matogahama</item>
+        <item>san</item>
+        <item>yon</item>
+        <item>roku</item>
+        <item>shiawasedori</item>
+        <item>minamiishigaki</item>
+        <item>hosenji</item>
+        <item>onsenmae</item>
+        <item>jinja</item>
+        <item>hatchyome</item>
+        <item>kyuchome</item>
+        <item>musumeda</item>
+        <item>shiomicho</item>
+        <item>harukigawa</item>
+        <item>fukamachi</item>
+        <item>rokushyoyen</item>
+        <item>shoningahama</item>
+        <item>baibasu</item>
+        <item>shohaen</item>
+        <item>benten</item>
+        <item>kiyosen</item>
+        <item>shinkawa</item>
+        <item>kamegawa</item>
+        <item>iriebashi</item>
+        <item>furuichi</item>
+        <item>sekinoe</item>
+        <item>kitashinden</item>
+        <item>osaka</item>
+        <item>mori</item>
+        <item>kosaten</item>
+        <item>house</item>
+        <item>apu</item>
+    </string-array>
+
+    <string-array name="bus_stop_names_full_rev">
+        <item>"Ritsumeikan Asia Pacific University"</item>
+        <item>"APHouse"</item>
+        <item>"Mori Kosaten"</item>
+        <item>"Mori Iriguchi"</item>
+        <item>"Osaka Iriguchi"</item>
+        <item>"Kitashinden"</item>
+        <item>"Sekinoe Kaisuiyokujo Mae"</item>
+        <item>"Furuichi"</item>
+        <item>"Furuichi Iriebashi"</item>
+        <item>"Kamegawa Station"</item>
+        <item>"Kamegawa Shinkawa"</item>
+        <item>"Kamegawa Kiyosen Mae"</item>
+        <item>"Benten Mae"</item>
+        <item>"Shohaen"</item>
+        <item>"Kamegawa Baibasu Iriguchi"</item>
+        <item>"Shoningahama Koen Mae"</item>
+        <item>"Rokushyoyen"</item>
+        <item>"Fukamachi"</item>
+        <item>"Harukigawa"</item>
+        <item>"Shiomicho"</item>
+        <item>"Musumeda"</item>
+        <item>"Oyabu"</item>
+        <item>"Ishigaki Kyuchome"</item>
+        <item>"Ishigaki Hatchyome"</item>
+        <item>"Yoshihiro  Jija Mae"</item>
+        <item>"Yoshihiro Onsen Mae"</item>
+        <item>"Hosenji"</item>
+        <item>"Minami Ishigaki"</item>
+        <item>"Shiawasedori"</item>
+        <item>"Fujimi Roku Chome"</item>
+        <item>"Fujimi Yon Chome"</item>
+        <item>"Fujimi San Chome"</item>
+        <item>"Minamisuga Iriguchi"</item>
+        <item>"Dai San Futo Iriguchi"</item>
+        <item>"Beppu Kotsu Center"</item>
+        <item>"Yubinkyoku Mae"</item>
+        <item>"Mochigahama"</item>
+        <item>"Kyomachi"</item>
+        <item>"Matogahama Koen Mae"</item>
+        <item>"Beppu Tower Mae"</item>
+        <item>"Beppu Kitahama"</item>
+        <item>"Ekimae Honmachi"</item>
+        <item>"APHouse"</item>
+        <item>"Beppu Station"</item>
+    </string-array>
+
+    <string-array name="bus_stop_names_fif_rev">
+        <item>"Ritsumeikan Asia Pacific University"</item>
+        <item>"APHouse"</item>
+        <item>"Mori Kosaten"</item>
+        <item>"Mori Iriguchi"</item>
+        <item>"Osaka Iriguchi"</item>
+        <item>"Kitashinden"</item>
+        <item>"Sekinoe Kaisuiyokujo Mae"</item>
+        <item>"Furuichi"</item>
+        <item>"Furuichi Iriebashi"</item>
+        <item>"Kamegawa Station"</item>
+        <item>"Kamegawa Shinkawa"</item>
+        <item>"Kamegawa Kiyosen Mae"</item>
+        <item>"Benten Mae"</item>
+        <item>"Shohaen"</item>
+        <item>"Kamegawa Baibasu Iriguchi"</item>
+        <item>"Shoningahama Koen Mae"</item>
+        <item>"Rokushyoyen"</item>
+        <item>"Fukamachi"</item>
+        <item>"Harukigawa"</item>
+        <item>"Minamisuga Iriguchi"</item>
+        <item>"Dai San Futo Iriguchi"</item>
+        <item>"Beppu Kotsu Center"</item>
+        <item>"Yubinkyoku Mae"</item>
+        <item>"Mochigahama"</item>
+        <item>"Kyomachi"</item>
+        <item>"Matogahama Koen Mae"</item>
+        <item>"Beppu Tower Mae"</item>
+        <item>"Beppu Kitahama"</item>
+        <item>"Ekimae Honmachi"</item>
+        <item>"APHouse"</item>
+        <item>"Beppu Station"</item>
+    </string-array>
+
+    <string-array name="bus_stop_names_fif_one_rev">
+        <item>"Ritsumeikan Asia Pacific University"</item>
+        <item>"APHouse"</item>
+        <item>"Mori Kosaten"</item>
+        <item>"Mori Iriguchi"</item>
+        <item>"Osaka Iriguchi"</item>
+        <item>"Kitashinden"</item>
+        <item>"Sekinoe Kaisuiyokujo Mae"</item>
+        <item>"Furuichi"</item>
+        <item>"Furuichi Iriebashi"</item>
+        <item>"Kamegawa Station"</item>
+        <item>"Kamegawa Shinkawa"</item>
+        <item>"Kamegawa Kiyosen Mae"</item>
+        <item>"Benten Mae"</item>
+        <item>"Shohaen"</item>
+        <item>"Kamegawa Baibasu Iriguchi"</item>
+        <item>"Shoningahama Koen Mae"</item>
+        <item>"Rokushyoyen"</item>
+        <item>"Fukamachi"</item>
+        <item>"Harukigawa"</item>
+        <item>"Shiomicho"</item>
+        <item>"Musumeda"</item>
+        <item>"Oyabu"</item>
+        <item>"Ishigaki Kyuchome"</item>
+        <item>"Ishigaki Hatchyome"</item>
+        <item>"Yoshihiro  Jija Mae"</item>
+        <item>"Yoshihiro Onsen Mae"</item>
+        <item>"Hosenji"</item>
+        <item>"Minami Ishigaki"</item>
+        <item>"Shiawasedori"</item>
+        <item>"Fujimi Roku Chome"</item>
+        <item>"Fujimi Yon Chome"</item>
+        <item>"Fujimi San Chome"</item>
+        <item>"Matogahama Koen Mae"</item>
+        <item>"Beppu Tower Mae"</item>
+        <item>"Beppu Kitahama"</item>
+        <item>"Ekimae Honmachi"</item>
+        <item>"Beppu Station"</item>
+    </string-array>
+    <string name="title_activity_slider">Bus Tracker</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_test_drawer">testDrawer</string>
+    <string name="title_activity_up_panel">upPanel</string>
+    <string name="title_activity_Calculator">Baito calculator</string>
+    <string name="title_activity_about_us">About us</string>
+    <string name="ab_home_description">Home</string>
+
+
+
+
+    <string name="rbtnFifty">50 line</string>
+    <string name="rbtnFiftyone">51 line</string>
+    <string name="rbtnAZ">Reverse</string>
+
+    <string-array name="time_differences_50_apu">
+        <item>0</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>240000</item>
+        <item>300000</item>
+        <item>360000</item>
+        <item>480000</item>
+        <item>540000</item>
+        <item>600000</item>
+        <item>660000</item>
+        <item>660000</item>
+        <item>720000</item>
+
+        <item>780000</item>
+        <item>840000</item>
+        <item>840000</item>
+        <item>900000</item>
+        <item>960000</item>
+        <item>1020000</item>
+        <item>1020000</item>
+        <item>1080000</item>
+        <item>1140000</item>
+        <item>1200000</item>
+        <item>1260000</item>
+        <item>1320000</item>
+        <item>1320000</item>
+        <item>1380000</item>
+        <item>1560000</item>
+        <item>1620000</item>
+        <item>1860000</item>
+        <item>1920000</item>
+
+
+    </string-array>
+
+    <string-array name="time_differences_50_down">
+        <item>0</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>360000</item>
+        <item>540000</item>
+        <item>600000</item>
+        <item>600000</item>
+        <item>660000</item>
+        <item>720000</item>
+        <item>780000</item>
+        <item>840000</item>
+        <item>900000</item>
+        <item>900000</item>
+        <item>960000</item>
+        <item>1020000</item>
+        <item>1080000</item>
+        <item>1080000</item>
+        <item>1140000</item>
+        <item>1200000</item>
+        <item>1260000</item>
+        <item>1260000</item>
+        <item>1320000</item>
+        <item>1380000</item>
+        <item>1440000</item>
+        <item>1560000</item>
+        <item>1620000</item>
+        <item>1680000</item>
+        <item>1680000</item>
+        <item>1740000</item>
+        <item>1800000</item>
+        <item>1860000</item>
+
+
+    </string-array>
+
+    <string-array name="time_differences_51_apu">
+        <item>0</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>240000</item>
+        <item>300000</item>
+        <item>360000</item>
+        <item>420000</item>
+        <item>480000</item>
+        <item>540000</item>
+        <item>600000</item>
+        <item>660000</item>
+        <item>720000</item>
+        <item>780000</item>
+        <item>840000</item>
+        <item>900000</item>
+        <item>900000</item>
+        <item>960000</item>
+        <item>1020000</item>
+        <item>1080000</item>
+        <item>1140000</item>
+        <item>1200000</item>
+        <item>1260000</item>
+        <item>1260000</item>
+        <item>1320000</item>
+        <item>1380000</item>
+        <item>1440000</item>
+        <item>1440000</item>
+        <item>1500000</item>
+        <item>1560000</item>
+        <item>1620000</item>
+        <item>1680000</item>
+        <item>1740000</item>
+        <item>1740000</item>
+        <item>1800000</item>
+        <item>1980000</item>
+        <item>2040000</item>
+        <item>2280000</item>
+        <item>2340000</item>
+
+    </string-array>
+
+    <string-array name="time_differences_51_down">
+        <item>0</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>360000</item>
+        <item>540000</item>
+        <item>600000</item>
+        <item>600000</item>
+        <item>660000</item>
+        <item>720000</item>
+        <item>780000</item>
+        <item>840000</item>
+        <item>900000</item>
+        <item>900000</item>
+        <item>960000</item>
+        <item>1020000</item>
+        <item>1080000</item>
+        <item>1080000</item>
+        <item>1140000</item>
+        <item>1260000</item>
+        <item>1320000</item>
+        <item>1380000</item>
+        <item>1440000</item>
+        <item>1440000</item>
+        <item>1500000</item>
+        <item>1560000</item>
+        <item>1620000</item>
+        <item>1680000</item>
+        <item>1740000</item>
+        <item>1800000</item>
+        <item>1860000</item>
+        <item>1920000</item>
+        <item>1980000</item>
+        <item>2040000</item>
+        <item>2100000</item>
+        <item>2100000</item>
+        <item>2160000</item>
+        <item>2220000</item>
+        <item>2280000</item>
+
+    </string-array>
+
+
+
+
+
+</resources>

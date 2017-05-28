@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="Yen per hour"
+            android:layout_below="@+id/txtclEndTime"
+            android:layout_alignStart="@+id/txtclEndTime"
+            android:textColor="@color/Red"
+            android:textColorHint="@color/Black"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_below="@+id/overTen"
+            android:layout_alignStart="@+id/editText3"
+            android:hint="Days"
+            android:textColor="@color/Red"
+            android:textColorHint="@color/Black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclEndTime"
+            android:textSize="35dp"
+            android:layout_below="@+id/txtclStartTime"
+            android:layout_alignStart="@+id/txtclStartTime"
+            android:text="--:--"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclStartTime"
+            android:textSize="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="85dp"
+            android:text="--:--"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:id="@+id/btnEndTime"
+            android:layout_alignTop="@+id/txtclEndTime"
+            android:layout_above="@+id/editText3"
+            android:onClick="chooseTime"
+            android:layout_alignEnd="@+id/btnStartTime"
+            android:layout_toEndOf="@+id/txtclEndTime"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:id="@+id/btnStartTime"
+            android:layout_toEndOf="@+id/txtclStartTime"
+            android:layout_alignTop="@+id/txtclStartTime"
+            android:layout_alignBottom="@+id/txtclStartTime"
+            android:onClick="chooseStartTime"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/button"
+            android:nestedScrollingEnabled="false"
+            android:onClick="calculateIt"
+            android:layout_below="@+id/editText4"
+            android:layout_alignEnd="@+id/editText4"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/overTen"
+            android:layout_below="@+id/editText3"
+            android:layout_alignStart="@+id/editText4"
+            android:focusable="true"
+            android:autoText="true"
+            android:hint="Wage after 10 PM"
+            android:textColor="@color/Red"
+            android:textColorHint="@color/Black"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeLayout2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/LightBlue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/result"
+                android:layout_below="@+id/txtWageAllDays"
+                android:layout_alignStart="@+id/txtWageAllDays"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Result:"
+                android:textSize="18sp"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Work hours:"
+                android:id="@+id/txtWorkHours"
+                android:textSize="18sp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Wage for one day:"
+                android:id="@+id/txtWageOneDay"
+                android:textSize="18sp"
+                android:layout_below="@+id/txtWorkLength"
+                android:layout_alignStart="@+id/txtWorkHours"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView7"
+                android:textSize="18sp"
+                android:layout_above="@+id/result"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Wage for all days:"
+                android:id="@+id/txtWageAllDays"
+                android:textSize="18sp"
+                android:layout_below="@+id/txtWageOneDay"
+                android:layout_alignStart="@+id/txtWageOneDay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Work length:"
+                android:id="@+id/txtWorkLength"
+                android:layout_below="@+id/txtWorkHours"
+                android:layout_alignStart="@+id/txtWorkHours"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

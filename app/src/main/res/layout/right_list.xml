@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#faf7f0">
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/list_padding"
+            android:divider="#ffff8b90"
+            android:paddingRight="@dimen/list_padding"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:dividerHeight="0.7dp">
+        </ListView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/pink_out_line"
+            android:orientation="horizontal"
+            android:layout_toStartOf="@+id/radioGroup2"
+            android:layout_toLeftOf="@+id/radioGroup2">
+
+            <ToggleButton
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/tbFifty"
+                android:background="@drawable/toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textOff="50"
+                android:textOn="50"
+                android:gravity="center"
+                android:text="@string/rbtnFifty"
+                android:textColor="@android:color/white" />
+
+            <ToggleButton
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/tbFiftyOne"
+                android:background="@drawable/toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textOff="51"
+                android:textOn="51"
+                android:gravity="center"
+                android:text="@string/rbtnFiftyone"
+                android:textColor="@android:color/white"
+                 />
+
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/pink_out_line"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+        <ToggleButton
+            android:id="@+id/tbAZList"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:textOff="Rev"
+
+            android:textOn="Rev"
+            android:text="@string/rbtnAZ"
+            android:textColor="@android:color/white"
+            android:checked="false"
+            android:layout_below="@+id/tbAZ"
+
+            />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

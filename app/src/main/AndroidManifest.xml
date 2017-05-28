@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="united.powers.rttest" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".LocationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="united.powers.rttest.ACTION_LOCATION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".DrawerListener"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="united.powers.rttest.ACTION_DRAWER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".LocationService" />
+
+        <activity
+            android:name=".activities.ManualActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.Slider" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.Slider" />
+        </activity>
+
+        <activity
+            android:name=".activities.Slider"
+            android:label="@string/title_activity_slider" >
+        </activity>
+
+        <activity
+            android:name=".activities.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+
+        <activity
+            android:name=".activities.Calculator"
+            android:label="@string/ab_home_description"
+            android:parentActivityName=".activities.Slider">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.Slider" />
+        </activity>
+
+        <activity
+            android:name=".activities.aboutUs"
+            android:label="@string/ab_home_description"
+            android:parentActivityName=".activities.Slider">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.Slider" />
+        </activity>
+
+    </application>
+
+</manifest>

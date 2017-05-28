@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/LightBlue" >
+
+      <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="35dp"
+        sothree:umanoShadowHeight="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutBir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/Black"
+                >
+
+                <TextView
+                    android:id="@+id/TxtBusNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/Red"
+                    android:textSize="60.0sp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/TxtBusNumber"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/TxtBusNumber"
+                    android:gravity="center"
+                    android:text="08:15:01"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/Red"
+                    android:textSize="40.0sp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Luxe"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Red"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtBGStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/TxtBusNumber"
+                    android:layout_alignBottom="@+id/TxtBusNumber"
+                    android:layout_alignRight="@+id/txtType"
+                    android:text="Station行き"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/Red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direction:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/BlaBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_alignEnd="@+id/txtType"
+                    android:paddingBottom="15dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutIkki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/linearLayout1"
+
+                android:layout_below="@+id/relativeLayoutBir">
+
+                <TextView
+                    android:id="@+id/txtStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Station: Beppu Kotsu Center"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/BlaBlack"
+                    android:layout_above="@+id/txtTimeLeft"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/txtTimeLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01:21:45"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="80.0sp"
+                    android:textColor="@color/BlaBlack"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <Button
+                    android:id="@+id/btnBackTime"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/pink_out_line"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:paddingRight="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_below="@+id/linearLayout1">
+
+                <RadioButton
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/MEkiIki"
+                    android:background="@drawable/toggle_widget_background"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Downtown"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/MAPUIki"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="APU"
+                    android:textColor="@android:color/white" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/radioGroup3"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/spTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <Spinner
+                    android:id="@+id/spNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="62dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/dragView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Full Schedule"
+                    android:id="@+id/txtDragInfo"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/button6"
+                    android:visibility="invisible"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/txtYasumiNote"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel"
+                android:orientation="horizontal"
+
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="8" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/panelTableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"></TableLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="8" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>
